@@ -1,18 +1,32 @@
 
-body {
-  text-align: center;
+body{
+  color: #878787;
+  margin: 0px;
 }
-
-h1 {
-  font-size: 72px;
-  color: white;
-}
-
-
 header {
   background-color: orange;
 }
-p {
+
+h1 {
+  font-size: 90px;
+  color: white;
+}
+
+h2 {
+  font-size: 53px;
+}
+
+h3 {
   font-size: 20px;
-  font-weight: bold;
+  color: #48525c;
+}
+
+.primary-content {
+  border: 3px solid red;
+}
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px orange;
 }
