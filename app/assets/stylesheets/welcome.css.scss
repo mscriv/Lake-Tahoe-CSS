@@ -7,6 +7,12 @@ body{
   background-color: orange;
 }
 
+.title {
+  color: white;
+  font-size: 26px;
+}
+
+
 h1 {
   font-size: 90px;
   color: white;
@@ -24,8 +30,6 @@ h3 {
 .primary-content {
   text-align: center;
 }
-.secondary-content {
-}
 
 .t-border {
   border-top: 2px solid lightgrey;
@@ -36,4 +40,25 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: solid 10px orange;
+}
+
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: forestgreen;
+}
+
+a:active {
+  color: lightcoral;
+}
+
+a:focus {
+  color: white;
+  background-color: orange;
 }
