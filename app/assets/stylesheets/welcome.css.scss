@@ -29,11 +29,13 @@ h2 {
   font-size: 3.3125em;
   text-decoration: underline;
   font-weight: normal;
+  margin-bottom: .5em; /*26px*/
 }
 
 h3 {
   font-size: 1.25em;
   color: #48525c;
+  margin-bottom: 1.7em; /*34px*/
 }
 
 /* Psuedo Classes-------------------*/
@@ -78,6 +80,7 @@ a:active {
 .primary-content,
 .secondary-content {
   width: 60%;
+  margin: auto;
 }
 
 .wildlife {
@@ -85,4 +88,5 @@ a:active {
   background-color: #434a52;
   padding: 18% 24%;
   border: 10px solid #ffa949;
+  margin: 105px 0 60px 0;
 }
