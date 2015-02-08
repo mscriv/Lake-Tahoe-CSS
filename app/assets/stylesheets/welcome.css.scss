@@ -3,7 +3,8 @@ body{
   color: #878787;
   margin: 0px;
   font-size: 1em;
-  font-family: sans-serif;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.5;
 }
 .main-header {
   background-color: #ffc949;
@@ -20,6 +21,7 @@ h1 {
   color: rgba(255, 255, 255, 1);
   text-transform: capitalize;
   font-weight: normal;
+  line-height: 1.3;
 
 }
 
