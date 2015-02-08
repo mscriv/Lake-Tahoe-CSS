@@ -36,28 +36,7 @@ h3 {
   color: #48525c;
 }
 
-p {
-}
-
-.primary-content,
-.secondary-content {
-}
-
-.primary-content, .main-header {
-  text-align: center;
-}
-
-.t-border {
-  border-top: 2px solid lightgrey;
-
-}
-
-#main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: solid 10px #ffc949;
-}
-
+/* Psuedo Classes-------------------*/
 a:link {
   color: rgb(255, 169, 73);
   text-decoration: none;
@@ -75,7 +54,33 @@ a:active {
   color: lightcoral;
 }
 
-a:focus {
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey;
+
+}
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px #ffc949;
+}
+
+
+/* Layout Styles ------------------ */
+
+.primary-content,
+.secondary-content {
+
+}
+
+.wildlife {
   color: white;
-  background-color: orange;
+  background-color: #434a52;
 }
