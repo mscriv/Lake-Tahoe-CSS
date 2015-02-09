@@ -1,3 +1,9 @@
+
+/* Web fonts------------ */
+
+
+/* Base Styling------------ */
+
 * {
   box-sizing: border-box;
 }
@@ -12,8 +18,13 @@ body{
 .main-header {
   padding-top: 170px;
   height: 850px;
-  background: #ffc949 url('../assets/img/mountains.jpg') no-repeat center;
+
+  background: linear-gradient(#000, transparent 90%),
+              linear-gradient(0deg, silver, transparent),
+              #ffc949 url('../assets/img/mountains.jpg') no-repeat center;
+
   background-size: cover;
+
 }
 
 .title {
@@ -138,6 +149,7 @@ a:active {
   background-size: cover;
   box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);
   border-radius: 10px;
+  
 
 }
 
