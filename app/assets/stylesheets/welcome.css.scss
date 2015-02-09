@@ -10,9 +10,10 @@ body{
   line-height: 1.5;
 }
 .main-header {
-  background-color: #ffc949;
   padding-top: 170px;
   height: 850px;
+  background: #ffc949 url('../assets/img/mountains.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .title {
