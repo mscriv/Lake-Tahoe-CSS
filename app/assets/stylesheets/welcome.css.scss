@@ -79,6 +79,17 @@ a:active {
 
 }
 
+.primary-content {
+  padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+}
+
 .callout {
   font-size: 1.25em;
   border-bottom: 3px solid;
@@ -115,4 +126,24 @@ a:active {
 
 .arrow {
   width: 50px;
+}
+/* Floated Columns ------------------ */
+
+.resorts,
+.tips {
+  width: 46.5%;
+}
+
+.tips {
+  float: right;
+}
+.resorts {
+  float: left;
+}
+
+/* Float Clearfix -------------------*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
