@@ -19,8 +19,8 @@ body{
   padding-top: 170px;
   height: 850px;
 
-  background: linear-gradient(#000, transparent 90%),
-              linear-gradient(0deg, silver, transparent),
+  background: linear-gradient(#ffa949, transparent 90%),
+              linear-gradient(0deg, #fff, transparent),
               #ffc949 url('../assets/img/mountains.jpg') no-repeat center;
 
   background-size: cover;
@@ -175,4 +175,18 @@ a:active {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Media Queries------------ */
+@media (max-width: 960px) {
+  body {
+    background: royalblue;
+    color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background: darkred;
+  }
 }
