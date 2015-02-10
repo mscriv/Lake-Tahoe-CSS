@@ -1,0 +1,35 @@
+<h1>Listing cabins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Price</th>
+      <th>Overview</th>
+      <th>Bedrooms</th>
+      <th>Bathrooms</th>
+      <th>Sleeps</th>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cabins.each do |cabin| %>
+      <tr>
+        <td><%= cabin.price %></td>
+        <td><%= cabin.overview %></td>
+        <td><%= cabin.bedrooms %></td>
+        <td><%= cabin.bathrooms %></td>
+        <td><%= cabin.sleeps %></td>
+        <td><%= cabin.type %></td>
+        <td><%= link_to 'Show', cabin %></td>
+        <td><%= link_to 'Edit', edit_cabin_path(cabin) %></td>
+        <td><%= link_to 'Destroy', cabin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cabin', new_cabin_path %>

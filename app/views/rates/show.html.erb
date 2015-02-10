@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @rate.date %>
+</p>
+
+<p>
+  <strong>Nightly:</strong>
+  <%= @rate.nightly %>
+</p>
+
+<p>
+  <strong>Weekly:</strong>
+  <%= @rate.weekly %>
+</p>
+
+<p>
+  <strong>Minimum stay:</strong>
+  <%= @rate.minimum_stay %>
+</p>
+
+<%= link_to 'Edit', edit_rate_path(@rate) %> |
+<%= link_to 'Back', rates_path %>

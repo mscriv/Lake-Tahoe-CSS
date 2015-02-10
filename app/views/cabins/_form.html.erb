@@ -1,0 +1,41 @@
+<%= form_for(@cabin) do |f| %>
+  <% if @cabin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cabin.errors.count, "error") %> prohibited this cabin from being saved:</h2>
+
+      <ul>
+      <% @cabin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :overview %><br>
+    <%= f.text_area :overview %>
+  </div>
+  <div class="field">
+    <%= f.label :bedrooms %><br>
+    <%= f.number_field :bedrooms %>
+  </div>
+  <div class="field">
+    <%= f.label :bathrooms %><br>
+    <%= f.number_field :bathrooms %>
+  </div>
+  <div class="field">
+    <%= f.label :sleeps %><br>
+    <%= f.number_field :sleeps %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  nightly: 1
+  weekly: 1
+  minimum_stay: MyString
+
+two:
+  date: MyString
+  nightly: 1
+  weekly: 1
+  minimum_stay: MyString
