@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150210152151) do
+ActiveRecord::Schema.define(version: 20150210153525) do
 
   create_table "cabins", force: true do |t|
     t.integer  "price"
@@ -31,6 +31,9 @@ ActiveRecord::Schema.define(version: 20150210152151) do
     t.string   "minimum_stay"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "cabin_id"
   end
+
+  add_index "rates", ["cabin_id"], name: "index_rates_on_cabin_id"
 
 end
