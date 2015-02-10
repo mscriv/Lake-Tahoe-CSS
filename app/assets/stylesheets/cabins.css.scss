@@ -235,10 +235,13 @@
   outline: rgb(51, 51, 51) none 0px;
 }/*#TD_20, #TD_23, #TD_33, #TD_36, #TD_46, #TD_49, #TD_59, #TD_62, #TD_72, #TD_75*/
 
+
+
 #TD_21, #TD_22, #TD_34, #TD_48, #TD_61, #TD_73 {
   border-collapse: collapse;
   color: rgb(51, 51, 51);
   height: 16px;
+  content: 'Not listed';
   text-align: center;
   vertical-align: middle;
   width: 85px;
@@ -258,7 +261,6 @@
   height: auto;
   text-align: center;
   width: auto;
-  content: 'Not listed';
   border: 0px none rgb(204, 204, 204);
   font: normal normal normal normal 13.0013008117676px/16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   outline: rgb(204, 204, 204) none 0px;

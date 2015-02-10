@@ -37,17 +37,27 @@
     <th id="TH_5">Dates</th>
     <th id="TH_6">Nightly</th>
     <th id="TH_7">Weekly</th>
+    <th id="TH_9">Monthly</th>
     <th id="TH_9">Minimum Stay</th>
+
   </tr>
   </thead>
 
-<tbody>
+<tbody id="TBODY_10">
   <% @cabin.rates.each do |rate| %>
-	<tr>
-	  <td><%= rate.date %></td>
-	  <td><%= rate.nightly %></td>
-	  <td><%= rate.weekly %></td>
-	  <td><%= rate.minimum_stay %></td>
+	<tr id="TR_11">
+	  <td colspan="5" id="TD_12">
+	    <table id="TABLE_13">
+	      <tbody id="TBODY_14">
+	      <tr id="TR_15">
+	        <th id="TH_16">
+	  <div id="DIV_17"><%= rate.date %></div>
+	          <div id="DIV_18"></div>
+	          <div id="DIV_19"></div>
+	  <td id="TD_20">$<%= rate.nightly %></td>
+	  <td id="TD_21">$<%= rate.weekly %></td>
+	        <td id="TD_22">Not Listed</td>
+	  <td id="TD_23"><%= rate.minimum_stay %></td>
 	</tr>
 	<% end %>
 </tbody>
