@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Price:</strong>
-  <%= @cabin.price %>
+  <strong>From</strong>
+  <h4>$<%= @cabin.price %> per night</h4>
 </p>
 
 <p>
@@ -29,6 +29,31 @@
   <strong>Type:</strong>
   <%= @cabin.type %>
 </p>
+<h3>Rates</h3>
+<div id="DIV_1">
+<table summary="Rates" id="TABLE_2">
+  <thead id="THEAD_3">
+  <tr id="TR_4">
+    <th id="TH_5">Dates</th>
+    <th id="TH_6">Nightly</th>
+    <th id="TH_7">Weekly</th>
+    <th id="TH_9">Minimum Stay</th>
+  </tr>
+  </thead>
 
-<%= link_to 'Edit', edit_cabin_path(@cabin) %> |
+<tbody>
+  <% @cabin.rates.each do |rate| %>
+	<tr>
+	  <td><%= rate.date %></td>
+	  <td><%= rate.nightly %></td>
+	  <td><%= rate.weekly %></td>
+	  <td><%= rate.minimum_stay %></td>
+	</tr>
+	<% end %>
+</tbody>
+</table>
+
+<button id="BUTTON_189">
 <%= link_to 'Back', cabins_path %>
+</button>
+
