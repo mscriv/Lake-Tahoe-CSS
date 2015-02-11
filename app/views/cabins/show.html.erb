@@ -5,13 +5,14 @@
 <h1 id="H1_1">
   <%= @cabin.title %>
 </h1>
+
 <div class="photo">
 <%= image_tag @cabin.image_url(:thumb).to_s %>
 </div>
-<p>
-  <strong>From</strong>
-  <h4>$<%= @cabin.price %> per night</h4>
-</p>
+
+<div>
+<h4>From: $<%= @cabin.price %> per night</h4>
+</div>
 
 <div id="DIV_1">
   <ul class= UL">
@@ -19,7 +20,6 @@
     <li id="LI_4"><%= @cabin.bathrooms %> Bathrooms</li>
     <li id="LI_5">Sleeps <%= @cabin.sleeps %></li>
     <li id="LI_6"><%= @cabin.type %></li>
-
 
     <h4>Description from the Manager</h4>
       <p>
