@@ -1,34 +1,26 @@
 <p id="notice"><%= notice %></p>
-
+<div>
+<%= image_tag @cabin.image_url.to_s %>
+</div>
 <p>
   <strong>From</strong>
   <h4>$<%= @cabin.price %> per night</h4>
 </p>
 
-<p>
-  <strong>Overview:</strong>
-  <%= @cabin.overview %>
-</p>
+<div id="DIV_1">
+  <ul class= UL">
+    <li id="LI_3"><%= @cabin.bedrooms %> Bedrooms</li>
+    <li id="LI_4"><%= @cabin.bathrooms %> Bathrooms</li>
+    <li id="LI_5">Sleeps <%= @cabin.sleeps %></li>
+    <li id="LI_6"><%= @cabin.type %></li>
 
-<p>
-  <strong>Bedrooms:</strong>
-  <%= @cabin.bedrooms %>
-</p>
 
-<p>
-  <strong>Bathrooms:</strong>
-  <%= @cabin.bathrooms %>
-</p>
+    <h4>Description from the Manager</h4>
+      <p>
+        <%= @cabin.overview %>
+      </p>
+</div>
 
-<p>
-  <strong>Sleeps:</strong>
-  <%= @cabin.sleeps %>
-</p>
-
-<p>
-  <strong>Type:</strong>
-  <%= @cabin.type %>
-</p>
 <h3>Rates</h3>
 <div id="DIV_1">
 <table summary="Rates" id="TABLE_2">
