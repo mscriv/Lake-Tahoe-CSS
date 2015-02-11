@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>Photo</th>
       <th>Price</th>
       <th>Overview</th>
       <th>Bedrooms</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @cabins.each do |cabin| %>
       <tr>
+        <td><%= image_tag cabin.image_url(:thumb).to_s %></td>
         <td><%= cabin.price %></td>
         <td><%= cabin.overview %></td>
         <td><%= cabin.bedrooms %></td>

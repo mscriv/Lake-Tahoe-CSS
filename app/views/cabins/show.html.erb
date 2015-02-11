@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
-<div>
-<%= image_tag @cabin.image_url.to_s %>
+
+<body>
+
+<h1 id="H1_1">
+  Gorgeous mountain home nestled in the trees
+</h1>
+<div class="photo">
+<%= image_tag @cabin.image_url(:thumb).to_s %>
 </div>
 <p>
   <strong>From</strong>
@@ -59,3 +65,4 @@
 <%= link_to 'Back', cabins_path %>
 </button>
 
+</body>

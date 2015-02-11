@@ -2,6 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 105px 0 60px 0;
+  padding: 0px 200px;
+}
+
+#H1_1 {
+  color: rgb(68, 68, 68);
+  height: 31px;
+  max-width: 80%;
+  width: 590.390625px;
+  perspective-origin: 295.1875px 15.5px;
+  transform-origin: 295.1875px 15.5px;
+  border: 0px none rgb(68, 68, 68);
+  font: normal normal normal normal 25.0025005340576px/31.2531242370605px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0px 0px 10px;
+  outline: rgb(68, 68, 68) none 0px;
+}/*#H1_1*/
+
+
+
 
 #DIV_1 {
   color: rgb(68, 68, 68);
@@ -743,5 +767,10 @@
    list-style-type: none;
    margin: 0;
    padding: 0;
+ }
+
+ .photo {
+   height: 384px;
+   line-height: 384px;
  }
 

@@ -69,6 +69,6 @@ class CabinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cabin_params
-      params.require(:cabin).permit(:price, :overview, :bedrooms, :bathrooms, :sleeps, :type)
+      params.require(:cabin).permit(:price, :overview, :bedrooms, :bathrooms, :sleeps, :type, :image)
     end
 end
