@@ -6,13 +6,52 @@
   <%= @cabin.title %>
 </h1>
 
-<div class="photo">
-<%= image_tag @cabin.image_url(:thumb).to_s %>
+
+<div id="DIV_40">
+  <div id="DIV_41">
+    <ul id="UL_42">
+      <li id="LI_43">
+        <a href="javascript:void(0)" id="A_44">Overview</a><span id="SPAN_45"></span>
+      </li>
+      <li id="LI_43">
+        <a href="javascript:void(0)" id="A_47">Map</a><span id="SPAN_48"></span>
+      </li>
+      <li id="LI_43">
+        <a href="javascript:void(0)" id="A_50">Availability</a><span id="SPAN_51"></span>
+      </li>
+      <li id="LI_43">
+        <a href="javascript:void(0)" id="A_53">Rates</a><span id="SPAN_54"></span>
+      </li>
+      <li id="LI_43">
+        <a href="javascript:void(0)" id="A_56">Amenities</a><span id="SPAN_57"></span>
+      </li>
+      <li id="LI_43">
+        <a href="javascript:void(0)" id="A_59">Reviews</a><span id="SPAN_60"></span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div>
-<h4>From: $<%= @cabin.price %> per night</h4>
-</div>
+
+
+
+
+ <div class="group">
+ <div class="photo">
+  <%= image_tag @cabin.image_url(:thumb).to_s %>
+ </div>
+
+  <div class="interested">
+    <h3>Interested?</h3>
+   <h4>From: $<%= @cabin.price %> per night</h4>
+   <h4> Request more information</h4>
+    <button id="BUTTON_189" type="button">
+      Contact Manager
+    </button>
+  </div>
+ </div>
+
+
 
 <div id="DIV_1">
   <ul class= UL">
